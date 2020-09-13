@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="rippelColor">#FF5722</color>
+    <color name="fontColor">#000</color>
+    <color name="shadowColor">#B5FF5722</color>
+    <color name="circleColor">#FF3D00</color>
+    <color name="radarColor">#F7974D36</color>
+    <color name="tailColor">#F8711E04</color>
+    <color name="sweeper1">#A6FF5722</color>
+    <color name="sweeper2">#FF5722</color>
+</resources>

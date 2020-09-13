@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatSection.MessageActivity"
+    android:onClick="disable">
+
+    <com.google.android.material.appbar.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_alignParentTop="true"
+        android:id="@+id/bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/toolbarImage"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_baseline_edit_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:id="@+id/toolbarName"
+                android:layout_toRightOf="@id/toolbarImage"
+                android:layout_toEndOf="@id/toolbarImage"
+                android:text="Unknown"/>
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bar"
+        android:id="@+id/list"
+        android:layout_above="@id/send_text"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bar"
+        android:id="@+id/thumbnail"
+        android:layout_above="@id/send_text"
+        android:visibility="gone"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/send_text"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="100dp">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <TableRow>
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:id="@+id/doc"
+                    android:onClick="doc"/>
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:id="@+id/img"
+                    android:onClick="img"/>
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:id="@+id/video"
+                    android:onClick="video"/>
+            </TableRow>
+            <TableRow>
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:id="@+id/audio"
+                    android:onClick="audio"/>
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:id="@+id/contact"
+                    android:onClick="contact"/>
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:id="@+id/location"
+                    android:onClick="location"/>
+            </TableRow>
+        </TableLayout>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/send_text"
+        android:layout_toLeftOf="@id/send_doc"
+        android:layout_toStartOf="@id/send_doc"
+        android:hint="Enter Message"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/send_doc"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/send_btn"
+        android:layout_toStartOf="@id/send_btn"
+        android:src="@drawable/ic_baseline_edit_24"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/send_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_baseline_edit_24"/>
+
+</RelativeLayout>

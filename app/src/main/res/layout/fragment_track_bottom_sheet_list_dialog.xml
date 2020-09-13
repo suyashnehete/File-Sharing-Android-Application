@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/minimize"
+        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:background="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/list_item_spacing_half"
+        android:paddingBottom="@dimen/list_item_spacing_half"
+        tools:context=".Fragments.TrackBottomSheetFragment"
+        tools:listitem="@layout/fragment_track_bottom_sheet_list_dialog_item" />
+</LinearLayout>

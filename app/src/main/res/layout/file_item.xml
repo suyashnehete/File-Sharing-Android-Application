@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/check"
+        android:layout_toStartOf="@id/check"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/ic_launcher"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/fileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/icon"
+        android:text="TextView"
+        android:lines="2"
+        android:maxLines="2"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/totalFiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fileName"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/icon"
+        android:text="TextView"
+        android:lines="1"
+        android:maxLines="1"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fileName"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/totalFiles"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_alignParentEnd="true"
+        android:text="TextView"
+        android:lines="1"
+        android:maxLines="1"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/unchecked_image"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="false"/>
+</RelativeLayout>

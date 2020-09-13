@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "382774913260",
+    "firebase_url": "https://indishare-8bd95.firebaseio.com",
+    "project_id": "indishare-8bd95",
+    "storage_bucket": "indishare-8bd95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382774913260:android:a5eea11013318b400a1dc9",
+        "android_client_info": {
+          "package_name": "com.ctrlaltfix.indishare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382774913260-7b3n8pmirjl5l9qo1cdlo030q0af3j39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1OJpJLQgNpsF8ep9rNOw11Zb28GDFIwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382774913260-7b3n8pmirjl5l9qo1cdlo030q0af3j39.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

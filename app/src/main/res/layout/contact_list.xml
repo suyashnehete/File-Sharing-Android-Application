@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <com.ctrlaltfix.indishare.UI.CircularImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        android:id="@+id/userProfile"
+        android:background="#AE000000"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_toRightOf="@id/userProfile"
+        android:layout_toEndOf="@id/userProfile"
+        android:layout_toLeftOf="@id/invite"
+        android:layout_toStartOf="@id/invite"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/userName"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userNumber"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/invite"
+        android:text="Invite"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+</RelativeLayout>
