@@ -16,6 +16,8 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Google Play filtering -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Google Play filtering -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- Google Play filtering -->
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <dist:module dist:instant="true" />
@@ -27,10 +29,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".ChatSection.ScrollingActivity"
-            android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".ChatSection.AddMemberActivity" />
         <activity
             android:name=".ChatSection.UserProfileActivity"
